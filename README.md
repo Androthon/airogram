@@ -1,40 +1,22 @@
-# userbot
+# Airogram
+Это юзербот для Telegram с GUI, который можно запустить на Android.
 
-Залить на Heroku 
+Установка:
+- Скачайте последний релиз Airogram с официальной страницы на GitHub - [ТЫК](https://github.com/Androthon/airogram).
+- Откройте скачавшийся APK-файл.
+- Нажмите "Установить".
+- Готово!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+Настройка:
+- Перейдите на сайт - https://telegram.org/apps.
+- Введите номер телефона.
+- Введите код, который придёт вам в личные сообщения Telegram.
+- Создайте новое приложение и получите api_hash и api_id.
+- Откройте Airogram.
+- Впишите туда api_hash, api_id и номер телефона.
+- Введите код.
+- На открывшейся странице нажмите на знак вопроса и почитайте про каждую функцию.
+- Включите нужные функции.
+- Готово!
 
-# Инструкция:
-
-Установи Python по ссылке [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-Установи Git по ссылке [https://git-scm.com/](https://git-scm.com/)
-
-### Скачаем репозиторий:
-
-Скачаем с помощью команды:
-
-```bash
-  git clone https://github.com/htmlcssphpjs/userbot.git
-  cd userbot
-```
-
-## Установим библиотеки
-
-Клонируй код с помощью команды:
-
-```bash
-  pip install -r requirements.txt
-```
-
-## Можете доработать что-то по желанию
-
-## Запускай
-
-```bash
-  python main.py
-```
-
-## Отправляй на Heroku
-
-https://zen.yandex.ru/media/vsevolodhtml/heroku-dlia-python-5f9998280e34a96ab3b19f5d
+© Androthon, 2021.
