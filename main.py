@@ -1,10 +1,3 @@
-#  U    U    SSSSS   EEEEEE   RRRRR    |    BBBBB     OOOOO    TTTTTTTTT
-#  U    U   S        E        R    R   |    B    B   O     O       T
-#  U    U    SSSS    EEEEEE   RRRRR    |    BBBBB    O     O       T
-#  U    U        S   E        R    R   |    B    B   O     O       T
-#   UUUU    SSSSS    EEEEEE   R    R   |    BBBBB     OOOOO        T
-
-
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.raw import functions
@@ -35,6 +28,8 @@ from memory_profiler import memory_usage
 import os
 import random
 import subprocess
+
+functions = {"thanos": False, "code": False, "html": False, "webhtml": False, "webinfo": False}
 
 mem = ''
 
@@ -138,18 +133,18 @@ REPLACEMENT_MAP = {"a": "ɐ","b": "q","c": "ɔ","d": "p","e": "ǝ",
 "(": ")",")": "(","[": "]","]": "[","{": "}","}": "{","<": ">",
 ">": "<","&": "⅋","_": "‾",}
 
-@app.on_message(filters.command("resume", prefixes="."))
-def resume(app, msg):
-    msg.edit_text('<b>Опыт работы - мои проекты:</b>'
-                '\n · <a href="https://vsevolodhtml.ru/cmd">Терминал</a>'
-                '\n · <a href="https://kreepmeister.github.io">Змейка</a>'
-                '\n · <a href="https://zen.yandex.ru/id/5e7c78ee99d560276a9df6e4">Канал на Дзен</a>'
-                '\n · <a href="https://2dplatform.github.io/">Платформер</a>'
-                '\n · <a href="https://phpchat2.herokuapp.com/">Чат</a>'
-                '\n · <a href="https://vsevolodhtml.ru/public/redactor">Редактор html</a>'
-                '\n<b>Образование по книгам: </b>\n · Java Script\n · Java Script и HTML'
-                '\n · Современный Веб-дизайн\n · Новая большая книга CSS\n · PHP и MySQL'
-                '\n · Node и Express\n<a href=\'https://vsevolodhtml.ru/\'><b>###Больше обо мне тут###</b></a>', parse_mode='html')
+#@app.on_message(filters.command("resume", prefixes="."))
+#def resume(app, msg):
+#    msg.edit_text('<b>Опыт работы - мои проекты:</b>'
+#                '\n · <a href="https://vsevolodhtml.ru/cmd">Терминал</a>'
+#                '\n · <a href="https://kreepmeister.github.io">Змейка</a>'
+#                '\n · <a href="https://zen.yandex.ru/id/5e7c78ee99d560276a9df6e4">Канал на Дзен</a>'
+#                '\n · <a href="https://2dplatform.github.io/">Платформер</a>'
+#                '\n · <a href="https://phpchat2.herokuapp.com/">Чат</a>'
+#                '\n · <a href="https://vsevolodhtml.ru/public/redactor">Редактор html</a>'
+#                '\n<b>Образование по книгам: </b>\n · Java Script\n · Java Script и HTML'
+#                '\n · Современный Веб-дизайн\n · Новая большая книга CSS\n · PHP и MySQL'
+#                '\n · Node и Express\n<a href=\'https://vsevolodhtml.ru/\'><b>###Больше обо мне тут###</b></a>', parse_mode='html')
 
 @app.on_message(filters.command("html", prefixes="."))
 def code1(app, msg):
