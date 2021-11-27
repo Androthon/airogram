@@ -1,7 +1,7 @@
 {
-  "name": "userbot",
-  "description": "UserBot telegram vsevolodhtml.",
-  "repository": "https://github.com/htmlcssphpjs/userbot",
+  "name": "airogram",
+  "description": "UserBot AiroGram",
+  "repository": "https://github.com/Androthon/airogram",
   "logo": "https://raw.githubusercontent.com/htmlcssphpjs/codebin/main/static/code.png",
   "keywords": ["tg", "userbot", "python"]
 }
