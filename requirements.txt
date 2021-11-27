@@ -3,3 +3,5 @@ requests
 translate
 prettytable
 memory_profiler
+kivy
+kivymd
